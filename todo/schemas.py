@@ -14,7 +14,7 @@ class STaskCreate(BaseModel):
 class STaskUpdate(BaseModel):
     """Schema for task"""
 
-    title: Annotated[str, StringConstraints(max_length=100)] | None = None
+    title: Annotated[str, StringConstraints(max_length=100)] | None
     description: Annotated[str, StringConstraints(max_length=250)] | None = None
 
 
